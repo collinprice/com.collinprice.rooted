@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+architectures: armv7 arm64 i386 x86_64
+description: com.collinprice.rooted
+author: Collin Price
+license: MIT
+copyright: Copyright (c) 2015 by Collin Price
+
+# these should not be edited
+name: com.collinprice.rooted
+moduleid: com.collinprice.rooted
+guid: 8fc8c542-563d-43f5-a9f9-70d0aa7ef14e
+platform: android
+minsdk: 5.1.2.v20151214111649
