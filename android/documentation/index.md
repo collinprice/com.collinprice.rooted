@@ -1,39 +1,16 @@
-# com.collinprice.rooted Module
+# Appcelerator Titanium Rooted Module
 
-## Description
+This module provides a function to check if a device has been Jailbroken (iOS), or Rooted (Android). Check the Releases tab for downloads.
 
-TODO: Enter your module description here
+## Install
 
-## Accessing the com.collinprice.rooted Module
-
-To access this module from JavaScript, you would do the following:
-
-    var com_collinprice_rooted = require("com.collinprice.rooted");
-
-The com_collinprice_rooted variable is a reference to the Module object.
-
-## Reference
-
-TODO: If your module has an API, you should document
-the reference here.
-
-### com_collinprice_rooted.function
-
-TODO: This is an example of a module function.
-
-### com_collinprice_rooted.property
-
-TODO: This is an example of a module property.
+Please check the Appcelerator [documentation](http://docs.appcelerator.com/platform/latest/#!/guide/Using_a_Module) for instructions on how to install this module
 
 ## Usage
 
-TODO: Enter your usage example here
-
-## Author
-
-TODO: Enter your author name, email and other contact
-details you want to share here.
-
-## License
-
-TODO: Enter your license/legal information here.
+    var Rooted = require('com.collinprice.rooted');
+    if (Rooted.isRooted()) {
+        Ti.API.info("DEVICE IS ROOTED!!!");
+    } else {
+        Ti.API.info("DEVICE IS NOT ROOTED.....");
+    }
